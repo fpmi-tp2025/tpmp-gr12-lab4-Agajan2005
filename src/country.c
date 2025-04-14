@@ -22,7 +22,8 @@ void add_country() {
     printf("Enter head of country: ");
     scanf("%s", head);
 
-    if (db_add_country(name, capital, language, population, square, currency, head) == SQLITE_OK) {
+    if (db_add_country(name, capital, language, population, square, 
+currency, head) == SQLITE_OK) {
         printf("Country added successfully.\n");
     } else {
         printf("Failed to add country.\n");

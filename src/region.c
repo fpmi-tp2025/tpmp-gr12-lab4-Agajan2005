@@ -18,7 +18,8 @@ void add_region() {
     printf("Enter country ID: ");
     scanf("%d", &country_id);
 
-    if (db_add_region(name, capital, population, square, country_id) == SQLITE_OK) {
+    if (db_add_region(name, capital, population, square, country_id) == 
+SQLITE_OK) {
         printf("Region added successfully.\n");
     } else {
         printf("Failed to add region.\n");

@@ -87,7 +87,8 @@ int main() {
             case 6:
                 printf("Enter country ID: ");
                 scanf("%d", &country_id);
-                printf("Average population: %.2f\n", db_avg_region_population(country_id));
+                printf("Average population: %.2f\n", 
+db_avg_region_population(country_id));
                 break;
             case 7:
                 printf("Total population: %d\n", db_total_population());
